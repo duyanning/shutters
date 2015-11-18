@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TimerDemo", "TimerDemo.vcproj", "{DE337C52-9BAD-49F0-9585-E0D692615B3E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{45863E93-30D8-4551-B06E-35EFB5DEE42E} = {45863E93-30D8-4551-B06E-35EFB5DEE42E}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shutters", "..\..\shutters\Shutters.vcproj", "{45863E93-30D8-4551-B06E-35EFB5DEE42E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE337C52-9BAD-49F0-9585-E0D692615B3E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE337C52-9BAD-49F0-9585-E0D692615B3E}.Debug|Win32.Build.0 = Debug|Win32
+		{DE337C52-9BAD-49F0-9585-E0D692615B3E}.Release|Win32.ActiveCfg = Release|Win32
+		{DE337C52-9BAD-49F0-9585-E0D692615B3E}.Release|Win32.Build.0 = Release|Win32
+		{45863E93-30D8-4551-B06E-35EFB5DEE42E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{45863E93-30D8-4551-B06E-35EFB5DEE42E}.Debug|Win32.Build.0 = Debug|Win32
+		{45863E93-30D8-4551-B06E-35EFB5DEE42E}.Release|Win32.ActiveCfg = Release|Win32
+		{45863E93-30D8-4551-B06E-35EFB5DEE42E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

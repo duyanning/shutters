@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{45863E93-30D8-4551-B06E-35EFB5DEE42E}</ProjectGuid>
+    <RootNamespace>Shutters</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PrecompiledHeaderFile>wincpp.hpp</PrecompiledHeaderFile>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(ProjectDir)..\lib\Shutters_d.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PrecompiledHeaderFile>wincpp.hpp</PrecompiledHeaderFile>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(ProjectDir)..\lib\Shutters.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="ButtonBase.cpp" />
+    <ClCompile Include="CheckBox.cpp" />
+    <ClCompile Include="CheckBoxMenuItem.cpp" />
+    <ClCompile Include="ChildWindow.cpp" />
+    <ClCompile Include="ComboBox.cpp" />
+    <ClCompile Include="CommandItem.cpp" />
+    <ClCompile Include="CommonDialog.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="ContextMenu.cpp" />
+    <ClCompile Include="ControlCollection.cpp" />
+    <ClCompile Include="Cursor.cpp" />
+    <ClCompile Include="FileDialog.cpp" />
+    <ClCompile Include="Form.cpp" />
+    <ClCompile Include="FrameWindow.cpp" />
+    <ClCompile Include="GdiplusManager.cpp" />
+    <ClCompile Include="Icon.cpp" />
+    <ClCompile Include="IMutuallyExclusiveOption.cpp" />
+    <ClCompile Include="IStateOption.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="ListBox.cpp" />
+    <ClCompile Include="ListControl.cpp" />
+    <ClCompile Include="MdiChildWindow.cpp" />
+    <ClCompile Include="MdiClient.cpp" />
+    <ClCompile Include="MdiFrameWindow.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MenuBar.cpp" />
+    <ClCompile Include="MenuItem.cpp" />
+    <ClCompile Include="MsgBox.cpp" />
+    <ClCompile Include="NativeButtonCreator.cpp" />
+    <ClCompile Include="NativeChildWindowCreator.cpp" />
+    <ClCompile Include="NativeComboBoxCreator.cpp" />
+    <ClCompile Include="NativeFrameWindowCreator.cpp" />
+    <ClCompile Include="NativeLabelCreator.cpp" />
+    <ClCompile Include="NativeListBoxCreator.cpp" />
+    <ClCompile Include="NativeTextBoxCreator.cpp" />
+    <ClCompile Include="NativeWindow.cpp" />
+    <ClCompile Include="NativeWindowCreator.cpp" />
+    <ClCompile Include="NotifyIcon.cpp" />
+    <ClCompile Include="nurserWindow.cpp" />
+    <ClCompile Include="OpenFileDialog.cpp" />
+    <ClCompile Include="Panel.cpp" />
+    <ClCompile Include="PopupMenu.cpp" />
+    <ClCompile Include="RadioButton.cpp" />
+    <ClCompile Include="RadioButtonMenuItem.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="RichTextBox.cpp" />
+    <ClCompile Include="RootWindow.cpp" />
+    <ClCompile Include="SaveFileDialog.cpp" />
+    <ClCompile Include="ScrollableControl.cpp" />
+    <ClCompile Include="Shutters.cpp" />
+    <ClCompile Include="StatusBar.cpp" />
+    <ClCompile Include="SubMenu.cpp" />
+    <ClCompile Include="TabControl.cpp" />
+    <ClCompile Include="TabPage.cpp" />
+    <ClCompile Include="TextBox.cpp" />
+    <ClCompile Include="TextBoxBase.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="ToolBar.cpp" />
+    <ClCompile Include="tostring.cpp" />
+    <ClCompile Include="WinControl.cpp" />
+    <ClCompile Include="wincpp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="Window_mouse.cpp" />
+    <ClCompile Include="winHelpers.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Button.hpp" />
+    <ClInclude Include="ButtonBase.hpp" />
+    <ClInclude Include="CancelEvent.hpp" />
+    <ClInclude Include="CancelEventArgs.hpp" />
+    <ClInclude Include="CheckBox.hpp" />
+    <ClInclude Include="CheckBoxMenuItem.hpp" />
+    <ClInclude Include="ChildWindow.hpp" />
+    <ClInclude Include="ComboBox.hpp" />
+    <ClInclude Include="CommandItem.hpp" />
+    <ClInclude Include="CommonDialog.hpp" />
+    <ClInclude Include="Component.hpp" />
+    <ClInclude Include="Console.hpp" />
+    <ClInclude Include="ContextMenu.hpp" />
+    <ClInclude Include="ControlCollection.hpp" />
+    <ClInclude Include="ControlEventArgs.hpp" />
+    <ClInclude Include="Cursor.hpp" />
+    <ClInclude Include="DialogResult.hpp" />
+    <ClInclude Include="Event.hpp" />
+    <ClInclude Include="EVENT_TYPE.hpp" />
+    <ClInclude Include="EventArgs.hpp" />
+    <ClInclude Include="FileDialog.hpp" />
+    <ClInclude Include="Form.hpp" />
+    <ClInclude Include="FrameWindow.hpp" />
+    <ClInclude Include="GdiplusManager.hpp" />
+    <ClInclude Include="Icon.hpp" />
+    <ClInclude Include="IMutuallyExclusiveOption.hpp" />
+    <ClInclude Include="IStateOption.hpp" />
+    <ClInclude Include="Label.hpp" />
+    <ClInclude Include="ListBox.hpp" />
+    <ClInclude Include="ListControl.hpp" />
+    <ClInclude Include="MdiChildWindow.hpp" />
+    <ClInclude Include="MdiClient.hpp" />
+    <ClInclude Include="MdiFrameWindow.hpp" />
+    <ClInclude Include="Menu.hpp" />
+    <ClInclude Include="MenuBar.hpp" />
+    <ClInclude Include="MenuItem.hpp" />
+    <ClInclude Include="MouseEvent.hpp" />
+    <ClInclude Include="MouseEventArgs.hpp" />
+    <ClInclude Include="MsgBox.hpp" />
+    <ClInclude Include="NativeButtonCreator.hpp" />
+    <ClInclude Include="NativeChildWindowCreator.hpp" />
+    <ClInclude Include="NativeComboBoxCreator.hpp" />
+    <ClInclude Include="NativeFrameWindowCreator.hpp" />
+    <ClInclude Include="NativeLabelCreator.hpp" />
+    <ClInclude Include="NativeListBoxCreator.hpp" />
+    <ClInclude Include="NativeTextBoxCreator.hpp" />
+    <ClInclude Include="NativeWindow.hpp" />
+    <ClInclude Include="NativeWindowCreator.hpp" />
+    <ClInclude Include="NotifyIcon.hpp" />
+    <ClInclude Include="nurserWindow.hpp" />
+    <ClInclude Include="OpenFileDialog.hpp" />
+    <ClInclude Include="PaintEvent.hpp" />
+    <ClInclude Include="PaintEventArgs.hpp" />
+    <ClInclude Include="Panel.hpp" />
+    <ClInclude Include="Point.hpp" />
+    <ClInclude Include="PopupMenu.hpp" />
+    <ClInclude Include="RadioButton.hpp" />
+    <ClInclude Include="RadioButtonMenuItem.hpp" />
+    <ClInclude Include="Rectangle.hpp" />
+    <ClInclude Include="RichTextBox.hpp" />
+    <ClInclude Include="RootWindow.hpp" />
+    <ClInclude Include="SafeMap.hpp" />
+    <ClInclude Include="SaveFileDialog.hpp" />
+    <ClInclude Include="ScrollableControl.hpp" />
+    <ClInclude Include="Shutters.hpp" />
+    <ClInclude Include="Size.hpp" />
+    <ClInclude Include="StatusBar.hpp" />
+    <ClInclude Include="SubMenu.hpp" />
+    <ClInclude Include="TabControl.hpp" />
+    <ClInclude Include="TabPage.hpp" />
+    <ClInclude Include="TextBox.hpp" />
+    <ClInclude Include="TextBoxBase.hpp" />
+    <ClInclude Include="Timer.hpp" />
+    <ClInclude Include="TListBox.hpp" />
+    <ClInclude Include="ToolBar.hpp" />
+    <ClInclude Include="tostring.hpp" />
+    <ClInclude Include="wincpp.hpp" />
+    <ClInclude Include="WinControl.hpp" />
+    <ClInclude Include="Window.hpp" />
+    <ClInclude Include="winHelpers.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
