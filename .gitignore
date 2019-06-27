@@ -12,3 +12,5 @@ release
 *.gch
 *.depend
 *.layout
+.vs
+.filters
